@@ -102,11 +102,11 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 const defaultProfile: ProfileData = {
   name: 'Edmar Miralpes',
   profession: 'Web Developer (Front-End Developer)',
-  age: '28',
+  age: '32',
   address: 'Philippines',
-  email: 'edmar.miralpes@email.com',
-  phone: '+63 912 345 6789',
-  profilePicture: 'https://images.unsplash.com/photo-1737575655055-e3967cbefd03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzU2ODg1OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080'
+  email: 'edmiralpes0117@gmail.com',
+  phone: '+63 946 642 8983',
+  profilePicture: 'https://scontent.fmnl9-2.fna.fbcdn.net/v/t39.30808-6/631448422_3342882395863214_7926838244559852201_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeG7HH4ILd_LHp1mPQR08RVYDo8EwBuzGCoOjwTAG7MYKv4RWwEYgpokvaEx39eEvBE88eGPz3nPJzJe2waHKu_M&_nc_ohc=O94gi4R_fkoQ7kNvwFyEJYd&_nc_oc=Adq5zkx7QsaJq0_AgXrL63EoK2u2bxk4o6luTWEcTjEXLXUW_SSeGNd407OfLJ9474c&_nc_zt=23&_nc_ht=scontent.fmnl9-2.fna&_nc_gid=T9i-tgihhO6gSN5R3FxKxA&_nc_ss=7a3a8&oh=00_Af2G7PGE0tYF5e1Nrr4n8cyOY2Qxbu2XdIIFI_vIz-5soA&oe=69DD555F'
 };
 
 const defaultServices: Service[] = [
@@ -177,10 +177,10 @@ const defaultFeedbacks: Feedback[] = [
 ];
 
 const defaultContacts: Contact[] = [
-  { id: '1', type: 'Email', value: 'edmar.miralpes@email.com', icon: 'Mail' },
-  { id: '2', type: 'Phone', value: '+63 912 345 6789', icon: 'Phone' },
-  { id: '3', type: 'LinkedIn', value: 'linkedin.com/in/edmarmiralpes', icon: 'Linkedin' },
-  { id: '4', type: 'GitHub', value: 'github.com/edmarmiralpes', icon: 'Github' }
+  { id: '1', type: 'Email', value: 'edmiralpes0117@gmail.com', icon: 'Mail' },
+  { id: '2', type: 'Phone', value: '+63 946 642 8983', icon: 'Phone' },
+  { id: '3', type: 'Facebook', value: 'facebook.com/KuyaRamDevs101', icon: 'Facebook' },
+  { id: '4', type: 'GitHub', value: 'github.com/KuyaYhatz', icon: 'Github' }
 ];
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
@@ -212,7 +212,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       setResume(data.resume || '');
       setAgreement(data.agreement || '');
       setRulesRegulations(data.rulesRegulations || '');
-      setPassword(data.password || 'admin123');
+      setPassword(data.password || '1994@RamDevs101');
     }
   }, []);
 

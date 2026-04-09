@@ -65,7 +65,7 @@ export function AdminProfile() {
               id="profilePicture"
               value={formData.profilePicture}
               onChange={(e) => setFormData({ ...formData, profilePicture: e.target.value })}
-              placeholder="https://example.com/photo.jpg"
+              placeholder="https://scontent.fmnl9-2.fna.fbcdn.net/v/t39.30808-6/631448422_3342882395863214_7926838244559852201_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeG7HH4ILd_LHp1mPQR08RVYDo8EwBuzGCoOjwTAG7MYKv4RWwEYgpokvaEx39eEvBE88eGPz3nPJzJe2waHKu_M&_nc_ohc=O94gi4R_fkoQ7kNvwFyEJYd&_nc_oc=Adq5zkx7QsaJq0_AgXrL63EoK2u2bxk4o6luTWEcTjEXLXUW_SSeGNd407OfLJ9474c&_nc_zt=23&_nc_ht=scontent.fmnl9-2.fna&_nc_gid=T9i-tgihhO6gSN5R3FxKxA&_nc_ss=7a3a8&oh=00_Af2G7PGE0tYF5e1Nrr4n8cyOY2Qxbu2XdIIFI_vIz-5soA&oe=69DD555F"
               className="mt-2 border-2"
               style={{ backgroundColor: '#000000', borderColor: '#147884', color: '#FFFFFF' }}
             />
