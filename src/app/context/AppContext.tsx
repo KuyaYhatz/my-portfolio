@@ -212,7 +212,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       setResume(data.resume || '');
       setAgreement(data.agreement || '');
       setRulesRegulations(data.rulesRegulations || '');
-      setPassword(data.password || '1994@RamDevs101');
+      setPassword('1994@RamDevs101');
     }
   }, []);
 
