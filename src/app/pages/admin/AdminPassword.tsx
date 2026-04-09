@@ -160,7 +160,7 @@ export function AdminPassword() {
                 Current Password
               </h3>
               <p className="text-sm" style={{ color: '#FFFFFF' }}>
-                For demo purposes, your current password is: <strong>admin123</strong>
+                For demo purposes, your current password is: <strong>1994@RamDevs101</strong>
               </p>
             </div>
           </div>
