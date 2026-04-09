@@ -22,32 +22,37 @@ import { AdminPassword } from "./pages/admin/AdminPassword";
 import { ResumePage } from "./pages/ResumePage";
 import { PortfolioPage } from "./pages/PortfolioPage";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      Component: Layout,
+      children: [
+        { index: true, Component: HomePage },
+        { path: "about", Component: AboutPage },
+        { path: "services", Component: ServicesPage },
+        { path: "feedbacks", Component: FeedbacksPage },
+        { path: "contact", Component: ContactPage },
+        { path: "faq", Component: FAQPage },
+        { path: "resume", Component: ResumePage },
+        { path: "portfolio", Component: PortfolioPage },
+        { path: "login", Component: LoginPage },
+        { path: "admin", Component: AdminDashboard },
+        { path: "admin/inquiries", Component: AdminInquiries },
+        { path: "admin/portfolio", Component: AdminPortfolio },
+        { path: "admin/resume", Component: AdminResume },
+        { path: "admin/services", Component: AdminServices },
+        { path: "admin/profile", Component: AdminProfile },
+        { path: "admin/faq", Component: AdminFAQ },
+        { path: "admin/agreement", Component: AdminAgreement },
+        { path: "admin/transactions", Component: AdminTransactions },
+        { path: "admin/contacts", Component: AdminContacts },
+        { path: "admin/rules", Component: AdminRules },
+        { path: "admin/password", Component: AdminPassword },
+      ],
+    },
+  ],
   {
-    path: "/",
-    Component: Layout,
-    children: [
-      { index: true, Component: HomePage },
-      { path: "about", Component: AboutPage },
-      { path: "services", Component: ServicesPage },
-      { path: "feedbacks", Component: FeedbacksPage },
-      { path: "contact", Component: ContactPage },
-      { path: "faq", Component: FAQPage },
-      { path: "resume", Component: ResumePage },
-      { path: "portfolio", Component: PortfolioPage },
-      { path: "login", Component: LoginPage },
-      { path: "admin", Component: AdminDashboard },
-      { path: "admin/inquiries", Component: AdminInquiries },
-      { path: "admin/portfolio", Component: AdminPortfolio },
-      { path: "admin/resume", Component: AdminResume },
-      { path: "admin/services", Component: AdminServices },
-      { path: "admin/profile", Component: AdminProfile },
-      { path: "admin/faq", Component: AdminFAQ },
-      { path: "admin/agreement", Component: AdminAgreement },
-      { path: "admin/transactions", Component: AdminTransactions },
-      { path: "admin/contacts", Component: AdminContacts },
-      { path: "admin/rules", Component: AdminRules },
-      { path: "admin/password", Component: AdminPassword },
-    ],
-  },
-]);
+    basename: "/my-portfolio",
+  }
+);
