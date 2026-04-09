@@ -185,7 +185,7 @@ const defaultContacts: Contact[] = [
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [password, setPassword] = useState('admin123');
+  const [password, setPassword] = useState('1994@RamDevs101');
   const [profile, setProfile] = useState<ProfileData>(defaultProfile);
   const [services, setServices] = useState<Service[]>(defaultServices);
   const [inquiries, setInquiries] = useState<Inquiry[]>([]);
